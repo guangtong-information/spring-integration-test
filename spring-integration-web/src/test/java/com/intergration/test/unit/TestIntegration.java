@@ -25,13 +25,12 @@ public class TestIntegration extends BaseTest {
     @Test
     public void testDrink() {
         TransRequest request = new TransRequest();
-        request.setKeep("test111");
-        request.setAppName("test");
-        request.setIntegrationChannel("a");
+        request.setKeep("keep12345678");
+        request.setAppName("Spring-Integration-Test");
 
         //饮料列表
         List<Order> list = Lists.newArrayList();
-        CommonDrinkOrder commonDrinkOrder = new CommonDrinkOrder();
+        CommonDrinkOrder commonDrinkOrder = new CommonDrinkOrder();   //普通饮料
         CoolDrinkOrder coolDrinkOrder = new CoolDrinkOrder("草莓");
         CoolDrinkOrder coolDrinkOrder2 = new CoolDrinkOrder("柠檬");
         HotDrinkOrder hotDrinkOrder = new HotDrinkOrder("奶茶");
@@ -45,7 +44,6 @@ public class TestIntegration extends BaseTest {
 
 
         ExternalResponse<TransRes> response = transService.trans(request);
-        response = transService.trans(request);
         System.out.println(response.toString());
         Assert.assertEquals(response.getErrorCode(), ResponseCodeConstant.SUCCESS.getResponseCode());
     }

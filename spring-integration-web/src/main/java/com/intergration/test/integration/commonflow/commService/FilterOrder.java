@@ -17,9 +17,7 @@ public class FilterOrder {
             if (payRequest.getOrders().get(i) instanceof CommonDrinkOrder) {
                 log.info("这种普通饮料无法制作哦");
                 list.remove(i);
-
             }
-
         }
         if (list.size() == 0) {
             throw new Exception("都不能做的饮料");

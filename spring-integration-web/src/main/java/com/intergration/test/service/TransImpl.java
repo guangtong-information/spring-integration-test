@@ -23,9 +23,6 @@ public class TransImpl implements TransService {
 
     @Override
     public ExternalResponse<TransRes> trans(TransRequest request) {
-        //执行TradeRouter中调整的Integration渠道名
-        request.setIntegrationChannel("authorizedCardAcctRechargeChannel");
-
         //方法一：创建消息对象
         Message<?> requestMessage = MessageBuilder.withPayload(request)
                 .setHeader("keep", request.getKeep())

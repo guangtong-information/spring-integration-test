@@ -34,8 +34,8 @@ public class ChangeDrinks implements ChannelInterceptor {
         if (dirnk instanceof HotDrinkOrder) {
             log.info("[{}] 转换热饮preSend，渠道名：{}，消息：{}", all, channel, message);
             HotDrinkOrder request = (HotDrinkOrder) message.getPayload();
-            request.setName("热水");
-            Message<?> message1= MessageBuilder.withPayload(request)
+            request.setName("<加热>" + request.getName());
+            Message<?> message1 = MessageBuilder.withPayload(request)
                     .copyHeaders(messageHeaders)
                     .build();
             return message1;
