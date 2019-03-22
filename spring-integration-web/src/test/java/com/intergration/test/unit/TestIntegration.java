@@ -11,6 +11,8 @@ import com.intergration.test.model.response.TransRes;
 import com.intergration.test.model.response.base.ExternalResponse;
 import com.intergration.test.service.TransService;
 import com.intergration.test.unit.base.BaseTest;
+import com.luckwine.parent.tools.sequence.enums.SequenceCode;
+import com.luckwine.parent.tools.sequence.util.SequenceUtil;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,7 @@ public class TestIntegration extends BaseTest {
     @Test
     public void testDrink() {
         TransRequest request = new TransRequest();
-        request.setKeep("keep12345678");
+        request.setKeep(SequenceUtil.genSequence(SequenceCode.TRACEID, "1"));
         request.setAppName("Spring-Integration-Test");
 
         //饮料列表
@@ -45,7 +47,7 @@ public class TestIntegration extends BaseTest {
 
         ExternalResponse<TransRes> response = transService.trans(request);
         System.out.println(response.toString());
-        Assert.assertEquals(response.getErrorCode(), ResponseCodeConstant.SUCCESS.getResponseCode());
+        Assert.assertEquals(response.getCode(), ResponseCodeConstant.SUCCESS.getResponseCode());
     }
 
     /**

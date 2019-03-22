@@ -21,15 +21,15 @@ public class ConvertResultService {
             transRes.setDrinkName(payRequestWrapper.getDrinkName());
             transRes.setIsComplete(payRequestWrapper.isComplete());
             res.setResult(transRes);
-            res.setErrorCode(ResponseCodeConstant.SUCCESS.getResponseCode());
-            res.setErrorMsg("成功制作");
+            res.setCode(ResponseCodeConstant.SUCCESS.getResponseCode());
+            res.setMsg("成功制作");
         } else {
             TransRes transRes = new TransRes();
             transRes.setDrinkName(payRequestWrapper.getDrinkName());
             transRes.setIsComplete(payRequestWrapper.isComplete());
             res.setResult(transRes);
-            res.setErrorCode(ResponseCodeConstant.FAIL.getResponseCode());
-            res.setErrorMsg("失败制作");
+            res.setCode(ResponseCodeConstant.FAIL.getResponseCode());
+            res.setMsg("失败制作");
         }
         return res;
     }

@@ -17,8 +17,8 @@ public class CommonResponse<T>  implements Serializable {
 
     private T result;  //获取调用返回值
 
-    private String errorCode; //获取错误码
+    private String code; //获取错误码
 
-    private String errorMsg;
+    private String msg;
 
 }
