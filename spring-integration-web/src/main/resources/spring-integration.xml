@@ -1,0 +1,73 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xsi:schemaLocation="http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration-3.0.xsd">
+
+    <!-- 工作流入口 -->
+    <int:gateway id="requestGateway" service-interface="com.intergration.test.gateway.RequestGateway"
+                 default-request-channel="requestInputChannel"
+                 default-reply-channel="requestOutputChannel" error-channel="requestErrorChannel"/>
+
+    <!-- 全局拦截器 -->
+    <int:channel-interceptor ref="interceptTradeChannel" pattern="*Channel" order="1"/>
+
+    <!-- 头部、内容信息打印 -->
+    <int:channel id="requestInputChannel"></int:channel>
+    <int:filter input-channel="requestInputChannel" output-channel="filterChannel" ref="checkRequestService" method="checkReq"></int:filter>
+
+    <int:channel id="filterChannel"></int:channel>
+    <!-- 过滤器 -->
+    <int:filter input-channel="filterChannel"  ref="filterOrder" method="filter" output-channel="orderSpliterChannel" />
+
+    <int:channel id="orderSpliterChannel"></int:channel>
+    <!-- 分割器 -->
+    <int:splitter ref="orderSpliter" input-channel="orderSpliterChannel" output-channel="sendOrderInputRouterChannel" method="splitMsg"/>
+
+    <int:channel id="sendOrderInputRouterChannel"></int:channel>
+    <!-- 渠道路由器 -->
+    <int:router input-channel="sendOrderInputRouterChannel" ref="sendOrderInputRouter" />
+
+    <int:channel id="coolDrinkOrderChannel"></int:channel>
+    <!-- 制作冷饮 -->
+    <int:service-activator input-channel="coolDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="coolDrink" method="transform"/>
+
+    <!-- 渠道拦截器：更改热饮 -->
+    <int:channel id="hotDrinkOrderChannel">
+        <int:interceptors>
+            <ref bean="changeDrinks"/>
+        </int:interceptors>
+    </int:channel>
+    <!-- 制作热饮 -->
+    <int:service-activator input-channel="hotDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="hotDrink" method="transform"/>
+
+    <int:channel id="aggregatorDrinkChannel"></int:channel>
+    <!-- 聚合器 -->
+    <int:aggregator ref="aggregatorDrink" method="transform" input-channel="aggregatorDrinkChannel" output-channel="sendWaiterInputChannel"/>
+
+    <int:channel id="sendWaiterInputChannel"></int:channel>
+    <!-- 多步骤合拼 -->
+    <int:chain input-channel="sendWaiterInputChannel" output-channel="convertResultChannel">
+        <int:transformer  ref="waiterSend"/>
+        <int:service-activator ref="collectionService" method="collection"/>
+    </int:chain>
+
+    <int:channel id="convertResultChannel"></int:channel>
+    <!-- 结果转换器, 将EeDataContext转换为最终的结果 -->
+    <int:service-activator ref="convertResultService"
+                           input-channel="convertResultChannel"
+                           output-channel="requestOutputChannel" method="handle"/>
+
+    <int:channel id="requestOutputChannel"></int:channel>
+    <!-- 结束endpoint -->
+
+
+    <int:channel id="requestErrorChannel"></int:channel>
+    <!-- 工作流异常处理 -->
+    <int:service-activator input-channel="requestErrorChannel" ref="exceptionHandleService" method="handle"
+                           output-channel="requestOutputChannel"/>
+</beans>

@@ -1,0 +1,174 @@
+Json" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\ide\meven-package" />
+        <option name="userSettingsFile" value="C:\Users\winlone\.m2\settings-aptech.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="aliyun" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-integration-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-integration-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="transflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="transflow" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="transformer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-integration-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-integration-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-integration-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+          

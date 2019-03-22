@@ -1,0 +1,31 @@
+package com.intergration.test.unit.base;
+
+
+import com.intergration.test.Application;
+import com.luckwine.parent.entitybase.enums.AppName;
+import com.luckwine.parent.entitybase.enums.ChannelCode;
+import com.luckwine.parent.entitybase.enums.OperLevel;
+import com.luckwine.parent.entitybase.request.CommonRequest;
+import com.luckwine.parent.tools.sequence.enums.SequenceCode;
+import com.luckwine.parent.tools.sequence.util.SequenceUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+
+import javax.annotation.Resource;
+
+/**
+ * 单元测试基类
+ */
+@Slf4j
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes = Application.class)
+@ContextConfiguration(locations = {"classpath:test-profile.xml"})
+@WebAppConfiguration
+@ActivePro

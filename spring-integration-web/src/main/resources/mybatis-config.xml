@@ -1,0 +1,48 @@
+</find>
+      <find>convertResultChannel</find>
+      <find>HotDrinkOrder</find>
+      <find>把饮料分给制作热饮的人制作</find>
+      <find>bestpay</find>
+      <find>Transformer</find>
+      <find>Splitter</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>CommonResponse</replace>
+      <replace>SkuDetailGetByIdsRequest</replace>
+      <replace>List&lt;SkuDetail&gt;</replace>
+      <replace>SkuStockModifyRequest</replace>
+      <replace>Boolean</replace>
+      <replace>getBuyLoginAccount</replace>
+      <replace>tradeSubOrder</replace>
+      <replace>subOrderCarrier</replace>
+      <replace>#{tradeGoodsOrder.</replace>
+      <replace>TradeCapitalStatement</replace>
+      <replace>TradeCart</replace>
+      <replace>TradeGoodsOrder</replace>
+      <replace>TradeMainOrder</replace>
+      <replace>TradeSubOrder</replace>
+      <replace>com.luckwine.trade.service.base.TestHelper</replace>
+      <replace>tradeGoodsOrder]</replace>
+      <replace>tradeGoodsOrder</replace>
+      <replace>tradeGoodsOrder.</replace>
+      <replace>tradeGoodsOrderList[0].</replace>
+      <replace>/</replace>
+      <replace>spring-integration</replace>
+      <replace>spring-integration-test</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/luckwine-trade-web/src/main/resources/application-test.yml" />
+        <option value="$PROJECT_DIR$/luckwine-trade-web/src/main/java/com/luckwine/trade/integration/transflow/wrapper/PayRequestWrapper.java" />
+        <option value="$PROJECT_DIR$/luckwine-trade-api/src/main/java/spring/integration/test/model/request/base/CommonRequest.java" />
+        <option value="$PROJECT_DIR$/luckwine-trade-web/src/main/java/spring/integration/test/integration/transflow/wrapper/PayRequestWrapper.java" />
+        <option value="$PROJECT_DIR$/luckwine-trade-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-integration-api/src/main/java/spring/integration/test/model/request/TransRequest.java" />
+        <option value="$PROJECT_DIR$/spring-integration-api/src/main/java/spring/integration/test/service/TransService.java" />
+        <option value="$PROJECT_DIR$/spring-integration-web/src/main/java/spring/integration/test/integration/transflow/wrapper/PayRequestWrapper.java" />
+        <option value="$PROJECT_DIR$/spring-integration-web/src/m

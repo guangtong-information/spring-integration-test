@@ -1,0 +1,110 @@
+ntegration-test\spring-integration-api\src\main\java\com\intergration\test" />
+      <recent name="D:\北大青鸟\高级课程\自有课程\交易中心\spring integration\代码例子\spring-integration-test\spring-integration-api\src\main\java" />
+      <recent name="D:\北大青鸟\高级课程\自有课程\交易中心\spring integration\代码例子\spring-integration-test\spring-integration-web\src\test\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intergration.test.integration.interceptor" />
+      <recent name="com.intergration.test.integration.commonflow.commService" />
+      <recent name="com.intergration.test.service" />
+      <recent name="com.intergration.test.gateway" />
+      <recent name="com.intergration.test.exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\workspace\aptech\luckwine-trade\luckwine-trade-web\src\test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestIntegration.testDrink">
+    <configuration name="DataBaseFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-integration-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luckwine.trade.service.test.createOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luckwine.trade.service.test.createOrder" />
+      <option name="MAIN_CLASS_NAME" value="com.luckwine.trade.service.test.createOrder.DataBaseFailTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseFailTest.testDataBaseFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-integration-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luckwine.trade.service.test.createOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luckwine.trade.service.test.createOrder" />
+      <option name="MAIN_CLASS_NAME" value="com.luckwine.trade.service.test.createOrder.DataBaseFailTest" />
+      <option name="METHOD_NAME" value="testDataBaseFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryGoodsFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-integration-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luckwine.trade.service.test.createOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luckwine.trade.service.test.createOrder" />
+      <option name="MAIN_CLASS_NAME" value="com.luckwine.trade.service.test.createOrder.QueryGoodsFailTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestIntegration.testDrink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-integration-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intergration.test.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.intergration.test.unit" />
+      <option name="MAIN_CLASS_NAME" value="com.intergration.test.unit.TestIntegration" />
+      <option name="METHOD_NAME" value="testDrink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.luckwine.trade.service.test in luckwine-trade-web" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-integration-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luckwine.trade.service.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luckwine.trade.service.test" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-integration-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="spring.integration.test.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName=

@@ -1,0 +1,24 @@
+# 配置文件加密因子key
+jasypt:
+  encryptor:
+    password: luckwine_trade
+
+#Web服务器本地访问端口
+server:
+  port: 9007
+
+#日志相关
+logging:
+  config: classpath:logback.xml
+
+#数据源配置 MyBatisConfig.class
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-wz9w6sgg78t2319s5mo.mysql.rds.aliyuncs.com:3306/luckwine-trade?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true
+    username: luckwine_trade
+    password: ENC(djqkXaHg1vYgCzlYM5VE1O36t4NDb4vV)
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource

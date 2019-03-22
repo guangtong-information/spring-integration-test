@@ -1,0 +1,247 @@
+" />
+      <workItem from="1538141309422" duration="258000" />
+      <workItem from="1538141803555" duration="1514000" />
+      <workItem from="1538186630019" duration="24700000" />
+      <workItem from="1538491867978" duration="1079000" />
+    </task>
+    <task id="LOCAL-00001" summary="订单模块代码基类提交">
+      <created>1537514117991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537514117991</updated>
+    </task>
+    <task id="LOCAL-00002" summary="订单下单代码签入">
+      <created>1538016871095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538016871096</updated>
+    </task>
+    <task id="LOCAL-00003" summary="订单下单代码签入">
+      <created>1538119598978</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538119598979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="订单下单代码签入">
+      <created>1538138752967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538138752967</updated>
+    </task>
+    <task id="LOCAL-00005" summary="订单下单代码签入">
+      <created>1538139790687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538139790687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="订单下单代码签入">
+      <created>1538140367087</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538140367087</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 19h 24m 06s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 19h 24m 48s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 19h 28m 22s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 20h 55m 52s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 21h 00m 31s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 21h 06m 12s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 21h 07m 40s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 21h 08m 32s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.09.29 at 21h 10m 58s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntegration_testDrink - 2018.10.02 at 22h 56m 34s.xml">
+      <configuration name="TestIntegration.testDrink" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="166116000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47549018" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36928105" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15849674" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22749591" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.49346405" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.198036" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.24962178" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.3322884" weight="0.24205749" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" x="112" y="183" width="879" height="402" id="Coverage" order="10" sideWeight="0.6677116" side_tool="true" type="FLOATING" weight="0.30257186" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.41571194" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31587562" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.24549918" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.41571194" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.299509" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.198036" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.24962178" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.19818456" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="订单模块代码基类提交" />
+    <MESSAGE value="订单下单代码签入" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单下单代码签入" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/service/trans/CreateOrderServiceServiceImpl.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/ConsumePreFlow.java</url>
+          <line>235</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/ConsumePreFlow.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/base/DefaultExceptionService.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/ConsumePreFlow.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/ConsumePreFlow.java</url>
+          <line>224</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/ConsumePreFlow.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/test/java/spring/integration/test/service/test/base/BaseTest.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-integration-web/src/main/java/com/luckwine/trade/integration/service/business/CreateOrderFlow.java</url>
+          <line>58</line>
+          <proper
