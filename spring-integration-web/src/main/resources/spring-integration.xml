@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/integration
 		http://www.springframework.org/schema/integration/spring-integration-3.0.xsd">
 
-    <!-- 工作流入口 -->
+    <!-- 瑞幸咖啡：制作饮料工作流入口 -->
     <int:gateway id="requestGateway" service-interface="com.intergration.test.gateway.RequestGateway"
                  default-request-channel="requestInputChannel"
                  default-reply-channel="requestOutputChannel" error-channel="requestErrorChannel"/>
@@ -36,7 +36,7 @@
     <int:channel id="coolDrinkOrderChannel"></int:channel>
     <int:service-activator input-channel="coolDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="coolDrink" method="transform"/>
 
-    <!-- 渠道拦截器：更改热饮 -->
+    <!-- 渠道拦截器：如果是热饮，打上热饮标签 -->
     <int:channel id="hotDrinkOrderChannel">
         <int:interceptors>
             <ref bean="changeDrinks"/>
