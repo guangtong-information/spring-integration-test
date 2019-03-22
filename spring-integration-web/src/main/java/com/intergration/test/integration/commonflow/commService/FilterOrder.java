@@ -1,5 +1,7 @@
 package com.intergration.test.integration.commonflow.commService;
 
+import com.intergration.test.constant.ResponseCodeConstant;
+import com.intergration.test.exception.IntergrationException;
 import com.intergration.test.integration.transformer.CommonDrinkOrder;
 import com.intergration.test.model.request.base.PayRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +22,7 @@ public class FilterOrder {
             }
         }
         if (list.size() == 0) {
-            throw new Exception("都不能做的饮料");
+            throw new IntergrationException(ResponseCodeConstant.SYS_EXCEPTION.getResponseCode(), "都不能做的饮料", payRequest.getKeep());
         } else {
             return true;
         }

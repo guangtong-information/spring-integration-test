@@ -31,25 +31,25 @@ public class ExceptionHandleService {
                 String appname = messageHeaders.get("appname") != null ? messageHeaders.get("appname").toString() : "";
                 String all = keep + "," + appname;
 
-                if (e.getCause() instanceof IntergrationException && null != e.getCause()) {
-                    IntergrationException PortalException = (IntergrationException) e.getCause();
+                if (null != e.getCause() && e.getCause() instanceof IntergrationException ) {
+                    IntergrationException intergrationException = (IntergrationException) e.getCause();
 
 
-                    log.info("[{}] ============进入异常流程(自定义PortalException)============ \n ResponseCode:{},ResponseDesc:{}", all, PortalException.getCode(), PortalException.getMessage());
-                    Throwable cause = PortalException.getCause();
+                    log.info("[{}] ============进入异常流程(自定义intergrationException)============ \n ResponseCode:{},ResponseDesc:{}", all, intergrationException.getCode(), intergrationException.getMessage());
+                    Throwable cause = intergrationException.getCause();
                     if (cause instanceof RpcException) {
                         RpcException rpcException = (RpcException) cause;
                         if (RpcException.TIMEOUT_EXCEPTION == rpcException.getCode()) {
                             externalResponse.setErrorCode(ResponseCodeConstant.PROCESSING.getResponseCode());
                             externalResponse.setErrorMsg(ResponseCodeConstant.PROCESSING.getResponseDesc());
-                            log.info("[{}] ============进入异常流程,RpcException异常(自定义PortalException)--结束============", all);
+                            log.info("[{}] ============进入异常流程,RpcException异常(自定义intergrationException)--结束============", all);
                             return externalResponse;
                         }
                     }
                     log.error("[{}] [ExceptionHandleService]交易失败！\n ResponseCode:{},ResponseDesc:{}, \n cause:[{}]",
-                            all, PortalException.getCode(), PortalException.getMessage(), Throwables.getStackTraceAsString(e));
-                    externalResponse.setErrorCode(PortalException.getCode());
-                    externalResponse.setErrorMsg(PortalException.getMessage());
+                            all, intergrationException.getCode(), intergrationException.getMessage(), Throwables.getStackTraceAsString(e));
+                    externalResponse.setErrorCode(intergrationException.getCode());
+                    externalResponse.setErrorMsg(intergrationException.getMessage());
                     return externalResponse;
                 }
             }
@@ -58,7 +58,7 @@ public class ExceptionHandleService {
         }
         externalResponse.setErrorCode(ResponseCodeConstant.SYS_EXCEPTION.getResponseCode());
         externalResponse.setErrorMsg(ResponseCodeConstant.SYS_EXCEPTION.getResponseDesc());
-        log.info("============进入异常流程(非自定义PortalException)============", msg.toString());
+        log.info("============进入异常流程(非自定义intergrationException)============", msg.toString());
         return externalResponse;
     }
 }

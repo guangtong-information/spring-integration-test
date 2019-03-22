@@ -45,7 +45,7 @@ public class InterceptTradeChannel implements ChannelInterceptor {
      */
     @Override
     public void postSend(Message<?> message, MessageChannel channel, boolean send) {
-        log.info("postSend，渠道名：{}，消息：{}，发送是否成功：{}", channel, message, send);
+        //log.info("postSend，渠道名：{}，消息：{}，发送是否成功：{}", channel, message, send);
     }
 
     /**
@@ -58,24 +58,24 @@ public class InterceptTradeChannel implements ChannelInterceptor {
      */
     @Override
     public void afterSendCompletion(Message<?> message, MessageChannel channel, boolean send, Exception ex) {
-        log.info("afterSendCompletion，渠道名：{}，消息：{}，发送是否成功：{}，异常：{}", channel, message, send, ex);
+        //log.info("afterSendCompletion，渠道名：{}，消息：{}，发送是否成功：{}，异常：{}", channel, message, send, ex);
     }
 
     @Override
     public boolean preReceive(MessageChannel channel) {
-        log.info("preReceive，渠道名：{}", channel);
+        //log.info("preReceive，渠道名：{}", channel);
         return true;
     }
 
     @Override
     public Message<?> postReceive(Message<?> message, MessageChannel channel) {
-        log.info("postReceive，消息：{}，渠道名：{}", message, channel);
+        //log.info("postReceive，消息：{}，渠道名：{}", message, channel);
         return message;
     }
 
     @Override
     public void afterReceiveCompletion(Message<?> message, MessageChannel channel, Exception ex) {
-        log.info("afterReceiveCompletion，消息：{}，渠道名：{}，异常：{}", message, channel, ex);
+        //log.info("afterReceiveCompletion，消息：{}，渠道名：{}，异常：{}", message, channel, ex);
     }
 
 

@@ -28,7 +28,7 @@
     <int:channel id="orderSpliterChannel"></int:channel>
     <int:splitter ref="orderSpliter" input-channel="orderSpliterChannel" output-channel="sendOrderInputRouterChannel" method="splitMsg"/>
 
-    <!-- 4、渠道路由器：指定路标 -->
+    <!-- 4、渠道路由器：指定制作饮料的工序 -->
     <int:channel id="sendOrderInputRouterChannel"></int:channel>
     <int:router input-channel="sendOrderInputRouterChannel" ref="sendOrderInputRouter" />
 
@@ -45,24 +45,24 @@
     <!-- 6、制作热饮 -->
     <int:service-activator input-channel="hotDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="hotDrink" method="transform"/>
 
-    <!-- 7、聚合器-集合对象聚合： -->
+    <!-- 7、聚合器-集合对象聚合：服务员收集好所有饮料 -->
     <int:channel id="aggregatorDrinkChannel"></int:channel>
     <int:aggregator ref="aggregatorDrink" method="transform" input-channel="aggregatorDrinkChannel" output-channel="sendWaiterInputChannel"/>
 
-    <!-- 8、消息处理链 -->
+    <!-- 8、消息处理链：a.服务员把饮料送到客户手里  b.客户喝完饮料，服务员收拾杯子 -->
     <int:channel id="sendWaiterInputChannel"></int:channel>
     <int:chain input-channel="sendWaiterInputChannel" output-channel="convertResultChannel">
         <int:transformer  ref="waiterSend"/>
         <int:service-activator ref="collectionService" method="collection"/>
     </int:chain>
 
-    <!-- 9、结果转换器, 将EeDataContext转换为最终的结果 -->
+    <!-- 9、结果转换器,：把结果放到response对象里面，并且带上响应编码 -->
     <int:channel id="convertResultChannel"></int:channel>
     <int:service-activator ref="convertResultService"
                            input-channel="convertResultChannel"
                            output-channel="requestOutputChannel" method="handle"/>
 
-    <!-- 10、渠道终结，输出结果 -->
+    <!-- 10、工作流结束：输出结果 -->
     <int:channel id="requestOutputChannel"></int:channel>
 
     <!-- other:工作流异常处理 -->
