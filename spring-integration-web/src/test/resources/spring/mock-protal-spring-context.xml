@@ -1,6 +1,0 @@
-3:45:11.309  INFO 7484 --- [main] c.u.j.EncryptablePropertySourceConverter : [-]  Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2018-10-02 23:45:11.310  INFO 7484 --- [main] c.u.j.EncryptablePropertySourceConverter : [-]  Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2018-10-02 23:45:11.310  INFO 7484 --- [main] c.u.j.EncryptablePropertySourceConverter : [-]  Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2018-10-02 23:45:11.310  INFO 7484 --- [main] c.u.j.EncryptablePropertySourceConverter : [-]  Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2018-10-02 23:45:11.311  INFO 7484 --- [main] c.u.j.EncryptablePropertySourceConverter : [-]  Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2018-10-02 23:45:11.311  INFO 7484 --- [main] c.u.j.Encryp

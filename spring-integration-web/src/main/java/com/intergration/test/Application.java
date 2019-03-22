@@ -2,12 +2,14 @@ package com.intergration.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ImportResource;
 
 
-@SpringBootApplication(scanBasePackages = {"com.intergration.test"})
+@SpringBootApplication(scanBasePackages = {"com.intergration.test"}, exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @ImportResource({"classpath:spring-integration.xml"})
 public class Application extends SpringBootServletInitializer {
 
