@@ -2,12 +2,12 @@ package com.intergration.test.unit.base;
 
 
 import com.intergration.test.Application;
+import com.intergration.test.sequence.enums.SequenceCode;
+import com.intergration.test.sequence.util.SequenceUtil;
 import com.luckwine.parent.entitybase.enums.AppName;
 import com.luckwine.parent.entitybase.enums.ChannelCode;
 import com.luckwine.parent.entitybase.enums.OperLevel;
 import com.luckwine.parent.entitybase.request.CommonRequest;
-import com.luckwine.parent.tools.sequence.enums.SequenceCode;
-import com.luckwine.parent.tools.sequence.util.SequenceUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.runner.RunWith;
