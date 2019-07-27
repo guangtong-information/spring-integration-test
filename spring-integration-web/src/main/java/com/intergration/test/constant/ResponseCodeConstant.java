@@ -12,7 +12,7 @@ public enum ResponseCodeConstant {
      * 内部编码
      */
     REQUEST_VALID("000003","请求参数合法"),
-
+    REQUEST_ILLEGAL("040001", "请求参数非法"),
 
     /**
      * 外部编码

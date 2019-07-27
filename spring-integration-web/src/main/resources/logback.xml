@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
+    <property name="logRoot" value="/data/applog"/>
+    <property name="logLevel" value="INFO"/>
+
+    <appender name="Info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>${logLevel}</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${logRoot}/spring-integration-test.log</file>
+        <encoder>
+            <pattern>%date %level [%thread] [%logger{0}] %msg%n trceid</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${logRoot}/spring-integration-test.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>500MB</maxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
 
 
-    <property name="log.name" value="spring-integration-test"/>
-    <property name="log.path" value="/data/applog"/>
-    <property name="log.level" value="info"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+    <!--
+    in.log：打印被调用的非查询接口日志
+    query.log: 打印被调用的查询接口日志
+    out.log：打印调用外部接口的日志（工作流全部打印在这里）
+    error.log: 打印错误异常信息
+    info.log: 打印普通信息
+    -->
 
 
-    <!-- 注意顺序不能乱 -->
-    <include resource="com/luckwine/parent/logback/luckwine-base.xml" />
+    <root level="${logLevel}">
+        <appender-ref ref="Info"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
 
-
+    <logger name="org.springframework" level="DEBUG"/>
+    <logger name="org.apache.zookeeper" level="ERROR"/>
+    <logger name="com.alibaba.dubbo" level="ERROR"/>
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="org.I0Itec" level="ERROR"/>
 
 </configuration>

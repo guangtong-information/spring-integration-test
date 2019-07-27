@@ -39,8 +39,6 @@
             <scope>provided</scope>
         </dependency>
 
-
-
         <!-- springboot actuator.提供项目运行时，查看运行中的各种配置及参数 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

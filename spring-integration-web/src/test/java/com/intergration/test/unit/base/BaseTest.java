@@ -2,12 +2,7 @@ package com.intergration.test.unit.base;
 
 
 import com.intergration.test.Application;
-import com.intergration.test.sequence.enums.SequenceCode;
-import com.intergration.test.sequence.util.SequenceUtil;
-import com.luckwine.parent.entitybase.enums.AppName;
-import com.luckwine.parent.entitybase.enums.ChannelCode;
-import com.luckwine.parent.entitybase.enums.OperLevel;
-import com.luckwine.parent.entitybase.request.CommonRequest;
+import com.intergration.test.model.request.base.CommonRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -73,10 +68,6 @@ public abstract class BaseTest {
      * 基本请求
      */
     public void initRequest() {
-        request.setAppName(AppName.TRADE.getCode());
-        request.setChannelCode(ChannelCode.PORTALWEB.getCode());
-        request.setOperLevel(OperLevel.DEFAULT.getCode());
-        request.setTraceId(SequenceUtil.genSequence(SequenceCode.TRACEID, "1"));
         initRequestInner();
     }
 
