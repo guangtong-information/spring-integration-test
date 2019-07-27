@@ -30,9 +30,6 @@ public abstract class BaseTest {
     protected TestHelper testHelper;
 
     protected static String PROFILE;
-
-    public static CommonRequest request = new CommonRequest();
-
     /**
      * 执行之前
      */
