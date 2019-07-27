@@ -50,6 +50,31 @@ public class TestIntegration extends BaseTest {
         Assert.assertEquals(response.getCode(), ResponseCodeConstant.SUCCESS.getResponseCode());
     }
 
+    @Test
+    public void testDrink2() {
+        TransRequest request = new TransRequest();
+        request.setKeep(SequenceUtil.genSequence(SequenceCode.TRACEID, "1"));
+        request.setAppName("Spring-Integration-Test");
+
+        //饮料列表
+        List<Order> list = Lists.newArrayList();
+        CommonDrinkOrder commonDrinkOrder = new CommonDrinkOrder();   //普通饮料
+        CoolDrinkOrder coolDrinkOrder = new CoolDrinkOrder("草莓");
+        CoolDrinkOrder coolDrinkOrder2 = new CoolDrinkOrder("柠檬");
+        HotDrinkOrder hotDrinkOrder = new HotDrinkOrder("奶茶");
+        HotDrinkOrder hotDrinkOrder2 = new HotDrinkOrder("咖啡");
+        list.add(commonDrinkOrder);
+        list.add(coolDrinkOrder2);
+        list.add(coolDrinkOrder);
+        list.add(hotDrinkOrder);
+        list.add(hotDrinkOrder2);
+        request.setOrders(list);
+
+
+        ExternalResponse<TransRes> response = transService.trans2(request);
+        System.out.println(response.toString());
+        Assert.assertEquals(response.getCode(), ResponseCodeConstant.SUCCESS.getResponseCode());
+    }
     /**
      * 通用请求参数
      */

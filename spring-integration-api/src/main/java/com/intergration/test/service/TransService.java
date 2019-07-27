@@ -19,4 +19,11 @@ public interface TransService {
      */
     ExternalResponse<TransRes> trans(TransRequest request);
 
+    /**
+     * 购买饮料流程
+     * @param request
+     * @return
+     */
+    ExternalResponse<TransRes> trans2(TransRequest request);
+
 }

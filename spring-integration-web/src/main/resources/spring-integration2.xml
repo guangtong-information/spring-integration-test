@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xsi:schemaLocation="http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration-3.0.xsd">
+
+    <!-- 瑞幸咖啡：制作饮料工作流入口 -->
+    <int:gateway id="requestGateway2" service-interface="com.intergration.test.gateway.RequestGateway2"
+                 default-request-channel="requestInputChannel2"
+                 default-reply-channel="requestOutputChannel2" error-channel="requestErrorChannel2"/>
+
+    <!-- 1、头部、内容信息打印 -->
+    <int:channel id="requestInputChannel2"></int:channel>
+    <int:filter input-channel="requestInputChannel2" output-channel="convertResultChannel2" ref="checkRequestService" method="checkReq"></int:filter>
+
+    <!-- 2、结果转换器,：把结果放到response对象里面，并且带上响应编码 -->
+    <int:channel id="convertResultChannel2"></int:channel>
+    <int:service-activator ref="convertResultService"
+                           input-channel="convertResultChannel2"
+                           output-channel="requestOutputChannel2" method="handle2"/>
+
+    <!-- 3、工作流结束：输出结果 -->
+    <int:channel id="requestOutputChannel2"></int:channel>
+
+    <!-- other:工作流异常处理 -->
+    <int:channel id="requestErrorChannel2"></int:channel>
+    <int:service-activator input-channel="requestErrorChannel2" ref="exceptionHandleService" method="handle"
+                           output-channel="requestOutputChannel2"/>
+</beans>

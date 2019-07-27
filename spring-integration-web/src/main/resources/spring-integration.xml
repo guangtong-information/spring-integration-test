@@ -8,65 +8,6 @@
 		http://www.springframework.org/schema/integration
 		http://www.springframework.org/schema/integration/spring-integration-3.0.xsd">
 
-    <!-- 瑞幸咖啡：制作饮料工作流入口 -->
-    <int:gateway id="requestGateway" service-interface="com.intergration.test.gateway.RequestGateway"
-                 default-request-channel="requestInputChannel"
-                 default-reply-channel="requestOutputChannel" error-channel="requestErrorChannel"/>
-
-    <!-- 全局拦截器 -->
-    <int:channel-interceptor ref="interceptTradeChannel" pattern="*Channel" order="1"/>
-
-    <!-- 1、头部、内容信息打印 -->
-    <int:channel id="requestInputChannel"></int:channel>
-    <int:filter input-channel="requestInputChannel" output-channel="filterChannel" ref="checkRequestService" method="checkReq"></int:filter>
-
-    <!-- 2、filter过滤器：过滤普通饮料，如果没有饮料制作，抛出异常 -->
-    <int:channel id="filterChannel"></int:channel>
-    <int:filter input-channel="filterChannel"  ref="filterOrder" method="filter" output-channel="orderSpliterChannel" />
-
-    <!-- 3、分割器-集合对象分割：饮料分开不同的工序去制作 -->
-    <int:channel id="orderSpliterChannel"></int:channel>
-    <int:splitter ref="orderSpliter" input-channel="orderSpliterChannel" output-channel="sendOrderInputRouterChannel" method="splitMsg"/>
-
-    <!-- 4、渠道路由器：指定制作饮料的工序 -->
-    <int:channel id="sendOrderInputRouterChannel"></int:channel>
-    <int:router input-channel="sendOrderInputRouterChannel" ref="sendOrderInputRouter" />
-
-    <!-- 5、制作冷饮 -->
-    <int:channel id="coolDrinkOrderChannel"></int:channel>
-    <int:service-activator input-channel="coolDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="coolDrink" method="transform"/>
-
-    <!-- 渠道拦截器：如果是热饮，打上热饮标签 -->
-    <int:channel id="hotDrinkOrderChannel">
-        <int:interceptors>
-            <ref bean="changeDrinks"/>
-        </int:interceptors>
-    </int:channel>
-    <!-- 6、制作热饮 -->
-    <int:service-activator input-channel="hotDrinkOrderChannel" output-channel="aggregatorDrinkChannel" ref="hotDrink" method="transform"/>
-
-    <!-- 7、聚合器-集合对象聚合：服务员收集好所有饮料 -->
-    <int:channel id="aggregatorDrinkChannel"></int:channel>
-    <int:aggregator ref="aggregatorDrink" method="transform" input-channel="aggregatorDrinkChannel" output-channel="sendWaiterInputChannel"/>
-
-    <!-- 8、消息处理链：a.服务员把饮料送到客户手里  b.客户喝完饮料，服务员收拾杯子 -->
-    <int:channel id="sendWaiterInputChannel"></int:channel>
-    <int:chain input-channel="sendWaiterInputChannel" output-channel="convertResultChannel">
-        <int:transformer  ref="waiterSend"/>
-        <int:service-activator ref="collectionService" method="collection"/>
-    </int:chain>
-
-    <!-- 9、结果转换器,：把结果放到response对象里面，并且带上响应编码 -->
-    <int:channel id="convertResultChannel"></int:channel>
-    <int:service-activator ref="convertResultService"
-                           input-channel="convertResultChannel"
-                           output-channel="requestOutputChannel" method="handle"/>
-
-    <!-- 10、工作流结束：输出结果 -->
-    <int:channel id="requestOutputChannel"></int:channel>
-
-    <!-- other:工作流异常处理 -->
-    <int:channel id="requestErrorChannel"></int:channel>
-    <int:service-activator input-channel="requestErrorChannel" ref="exceptionHandleService" method="handle"
-                           output-channel="requestOutputChannel"/>
+    <import resource="spring-integration1.xml"></import>
+    <import resource="spring-integration2.xml"></import>
 </beans>

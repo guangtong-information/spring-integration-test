@@ -3,6 +3,7 @@ package com.intergration.test.integration.commonflow.commService;
 
 import com.intergration.test.constant.ResponseCodeConstant;
 import com.intergration.test.integration.transflow.wrapper.PayRequestWrapper;
+import com.intergration.test.model.request.TransRequest;
 import com.intergration.test.model.response.TransRes;
 import com.intergration.test.model.response.base.ExternalResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -34,5 +35,13 @@ public class ConvertResultService {
         return res;
     }
 
+    public ExternalResponse<TransRes> handle2(TransRequest request) {
+        ExternalResponse<TransRes> res = new ExternalResponse<TransRes>();
+        TransRes transRes = new TransRes();
+        res.setResult(transRes);
+        res.setCode(ResponseCodeConstant.SUCCESS.getResponseCode());
+        res.setMsg("成功制作");
+        return res;
+    }
 
 }
